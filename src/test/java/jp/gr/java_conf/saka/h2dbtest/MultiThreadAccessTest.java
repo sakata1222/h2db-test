@@ -14,11 +14,13 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+
+import org.h2.engine.Constants;
 import org.junit.jupiter.api.Test;
 
 class MultiThreadAccessTest {
 
-  private static final String URL = "jdbc:h2:mem:test_concurrent;MULTI_THREADED=FALSE";
+  private static final String URL = "jdbc:h2:mem:test_concurrent;LOCK_TIMEOUT=120000";
 
   @Test
   void test() throws SQLException, InterruptedException, ExecutionException {

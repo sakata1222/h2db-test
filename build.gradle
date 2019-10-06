@@ -23,14 +23,14 @@ repositories {
 dependencies {
 
   testImplementation 'org.junit.jupiter:junit-jupiter-api:5.4.2'
-  testImplementation 'com.h2database:h2:1.4.197'
+  testImplementation 'com.h2database:h2:1.4.199'
 
   testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.4.2'
 }
 
 application {
   // Define the main class for the application
-  mainClassName = 'jp.gr.java_conf.saka.h2dbtest.App'
+  mainClassName = 'jp.gr.java_conf.saka.h2dbtest.Dummy'
 }
 
 test {
